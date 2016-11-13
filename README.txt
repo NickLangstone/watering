@@ -14,3 +14,4 @@ https://www.npmjs.com/package/rpi-gpio    GPIO node module that supports async a
 
 npm install rpi-gpio
 
+https://github.com/fivdi/onoff

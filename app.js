@@ -20,6 +20,12 @@ gpio.setup(SW2_PORT, gpio.DIR_IN, gpio.EDGE_BOTH); // Input for valve switch - R
 gpio.setup(M1_PORT, gpio.DIR_OUT, write);      // output - valve motor
 gpio.setup(M2_PORT, gpio.DIR_OUT, write);      // output - valve motor
 
+function write() {
+    gpio.write(7, true, function(err) {
+        if (err) throw err;
+        logger.debug('Written to pin');
+    });
+}
 
 gpio.on('change', function(channel, value) {
     logger.info('Channel ' + channel + ' value is now ' + value);
