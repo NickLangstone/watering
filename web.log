@@ -1,0 +1,20 @@
+[2016-11-13 18:13:28.148] [DEBUG] mainlog - Logging established.
+[2016-11-13 18:13:28.171] [INFO] mainlog - Example app listening on port 3000!
+[2016-11-13 18:14:00.182] [DEBUG] mainlog - running a task every minute......
+[2016-11-13 18:14:41.895] [DEBUG] mainlog - Logging established.
+[2016-11-13 18:14:41.915] [INFO] mainlog - Example app listening on port 3000!
+[2016-11-13 18:15:00.919] [DEBUG] mainlog - NaN
+[2016-11-13 18:15:13.851] [DEBUG] mainlog - Logging established.
+[2016-11-13 18:15:13.872] [INFO] mainlog - Example app listening on port 3000!
+[2016-11-13 18:16:20.263] [DEBUG] mainlog - Logging established.
+[2016-11-13 18:16:20.283] [INFO] mainlog - Example app listening on port 3000!
+[2016-11-13 18:17:00.304] [DEBUG] mainlog - running a task every minute...... 1479014220304
+[2016-11-13 18:17:25.542] [DEBUG] mainlog - Logging established.
+[2016-11-13 18:17:25.568] [INFO] mainlog - Example app listening on port 3000!
+[2016-11-13 18:18:30.210] [DEBUG] mainlog - Logging established.
+[2016-11-13 18:18:30.231] [INFO] mainlog - Example app listening on port 3000!
+[2016-11-13 18:18:33.302] [DEBUG] mainlog - Logging established.
+[2016-11-13 18:18:33.327] [INFO] mainlog - Example app listening on port 3000!
+[2016-11-13 18:19:00.336] [DEBUG] mainlog - running a task every minute...... 2016-11-13T05:19:00.336Z
+[2016-11-13 18:20:00.382] [DEBUG] mainlog - running a task every minute...... 2016-11-13T05:20:00.382Z
+[2016-11-13 18:21:00.416] [DEBUG] mainlog - running a task every minute...... 2016-11-13T05:21:00.416Z
