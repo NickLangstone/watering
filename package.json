@@ -8,14 +8,13 @@
     "log4js": "^1.0.1",
     "node-cron": "^1.1.2",
     "path": "^0.12.7",
-	"rpi-gpio": "*"
+    "rpi-gpio": "*",
+    "sleep": "^5.0.0"
   },
-  "repository" :
-  { "type" : "git"
-  , "url" : "https://github.com/NickLangstone/watering.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NickLangstone/watering.git"
   },
-
-  
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

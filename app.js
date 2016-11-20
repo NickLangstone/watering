@@ -52,12 +52,26 @@ router.get("/contact",function(req,res){
 
 router.get("/close1",function(req,res){
   logger.debug("close1 called");
-  valve.openValve1();
+  valve.closeValve1();
+  res.sendFile(path + "index.html");
 });
 
 router.get("/open1",function(req,res){
     logger.debug("open1 called");
-	valve.closeValve1();
+    valve.openValve1();
+    res.sendFile(path + "index.html");
+});
+
+router.get("/close2",function(req,res){
+  logger.debug("close2 called");
+  valve.closeValve2();
+  res.sendFile(path + "index.html");
+});
+
+router.get("/open2",function(req,res){
+    logger.debug("open2 called");
+    valve.openValve2();
+    res.sendFile(path + "index.html");
 });
 
 
@@ -69,7 +83,7 @@ app.use("*",function(req,res){
 });
 
 app.listen(3000, function () {
-  logger.info('Example app listening on port 3000!')
+  logger.info('Watering app listening on port 3000!')
 })
 
 
