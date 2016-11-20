@@ -1,3 +1,8 @@
+var sleep = require("sleep");
+
+
+
+
 var Gpio = require('onoff').Gpio,
   valve1 = new Gpio(17, 'in', 'both'),
   valve2 = new Gpio(27, 'in', 'both'),
@@ -35,6 +40,9 @@ function valve1Turn(){
 }
 
 function valve1Open(){
+   console.log("valve1Open() ");
+
+
    if ( valve1State == null )
    {
 		console.log("State unknown");
@@ -56,3 +64,8 @@ function exit() {
     process.exit();
 }
 process.on('SIGINT', exit);
+
+console.log("Started");
+sleep.sleep(3);
+valve1Open();
+
