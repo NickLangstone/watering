@@ -1,6 +1,3 @@
-var sleep = require("sleep");
-
-
 
 
 var Gpio = require('onoff').Gpio,
@@ -78,7 +75,5 @@ function exit() {
 }
 process.on('SIGINT', exit);
 
-console.log("Started");
-sleep.sleep(3);
-valve1Open();
+
 

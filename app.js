@@ -5,57 +5,7 @@ var log4js = require('log4js');
 //var scheduled_tasks = require('scheduled_tasks.js');
 var cron = require('node-cron');
 
-// Setup the board and the ports assigned
-var gpio = require('rpi-gpio');
-
-
-var SW1_PORT = 17;
-var M1_PORT = 25;
-var SW2_PORT = 27;
-var M2_PORT = 24;
-
-gpio.setup(SW1_PORT, gpio.DIR_IN, gpio.EDGE_BOTH); // Input for valve switch - Rising edge = Open, Falling Edge = Closed
-gpio.setup(SW2_PORT, gpio.DIR_IN, gpio.EDGE_BOTH); // Input for valve switch - Rising edge = Open, Falling Edge = Closed
-
-gpio.setup(M1_PORT, gpio.DIR_OUT, write);      // output - valve motor
-gpio.setup(M2_PORT, gpio.DIR_OUT, write);      // output - valve motor
-
-function write() {
-    gpio.write(7, true, function(err) {
-        if (err) throw err;
-        logger.debug('Written to pin');
-    });
-}
-
-gpio.on('change', function(channel, value) {
-    logger.info('Channel ' + channel + ' value is now ' + value);
-	
-	// Valve 1
-    if ( channel == SW1_PORT && value == 1   )
-	{
-        logger.info( "===Rising edge detected on " + channel +" - Valve Open");
-		gpio.write(M1_PORT,0);
-	}
-	if ( channel == SW1_PORT && value == 0   )
-	{
-        logger.info( "===Rising edge detected on " + channel +" - Valve Closed");
-		gpio.write(M1_PORT,0);
-	}
-	//Valve 2
-    if ( channel == SW2_PORT && value == 1   )
-	{
-        logger.info( "===Rising edge detected on " + channel +" - Valve Open");
-		gpio.write(M2_PORT,0);
-	}
-    if ( channel == SW2_PORT && value == 0   )
-	{
-        logger.info( "===Rising edge detected on " + channel +" - Valve Closed");
-		gpio.write(M2_PORT,0);
-	}
-
-
-});
-
+var valve = require('./valve.js');
 
 
 
@@ -99,6 +49,18 @@ router.get("/about",function(req,res){
 router.get("/contact",function(req,res){
   res.sendFile(path + "contact.html");
 });
+
+router.get("/close1",function(req,res){
+  logger.debug("close1 called");
+  valve.openValve1();
+});
+
+router.get("/open1",function(req,res){
+    logger.debug("open1 called");
+	valve.closeValve1();
+});
+
+
 
 app.use("/",router);
 
