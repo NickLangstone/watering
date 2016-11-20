@@ -16,6 +16,7 @@ var ON = 1;
 
 valve1.watch(function(err, value) {
  console.log("Valve1, detected : " + value + "  err : " + err );
+ sleep.usleep(100);
  valve1Motor.writeSync(OFF);
  if ( 1 == value ) {
 	valve1State = "OPEN";
@@ -34,7 +35,7 @@ valve2.watch(function(err, value) {
 });
 
 function valve1Turn(){
-    valve1.writeSync(ON);
+    valve1Motor.writeSync(ON);
 	console.log("Valve1 - turning");
 	
 }
@@ -48,6 +49,9 @@ function valve1Open(){
 		console.log("State unknown");
 		valve1Turn();
 		sleep.sleep(3); // wait for the valve to turn to find out the state
+        if ( valve1State == "CLOSED" ) {
+		valve1Turn();  // we want it open - so keep turning
+	}
    }
       if ( valve1State == "CLOSED" )
    {
