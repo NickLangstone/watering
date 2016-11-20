@@ -30,6 +30,14 @@ logger.debug('Logging established.');
 
 cron.schedule('* * * * *', function(){
   logger.debug('running a task every minute...... ' + new Date().toISOString() );
+  
+  // make sure we know the state of the valves.
+  if (valve.valve1State == null ) {
+      valve.closeValve1();
+  }
+  if (valve.valve2State == null ) {
+      valve.closeValve2();
+  }
 });
 
 
