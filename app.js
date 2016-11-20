@@ -1,58 +1,19 @@
 var express = require('express')
 var app = express()
+var logger = require('./logger.js');
 
-var log4js = require('log4js');
-//var scheduled_tasks = require('scheduled_tasks.js');
-var cron = require('node-cron');
-
-var valve = require('./valve.js');
-
-
-
+// use a fake valve if not running on a RaspberryPi
+var config = require('./config.js');
+if ( config.fakevalves) {
+  var valve = require('./fakevalve.js');
+} else {
+	var valve = require('./valve.js');
+}
+var schedule = require('./scheduled_tasks.js');
 
 var router = express.Router();
 var path = __dirname + '/views/';
 
-
-
-
-
-//console log is loaded by default, so you won't normally need to do this
-//log4js.loadAppender('console');
-log4js.loadAppender('file');
-//log4js.addAppender(log4js.appenders.console());
-log4js.addAppender(log4js.appenders.file('./web.log'), 'mainlog');
-
-var logger = log4js.getLogger('mainlog');
-logger.setLevel('debug');
-
-logger.debug('Logging established.');
-
-
-
-/*
-
-Cron Format
-
- ┌───────────── min (0 - 59)
- │ ┌────────────── hour (0 - 23)
- │ │ ┌─────────────── day of month (1 - 31)
- │ │ │ ┌──────────────── month (1 - 12)
- │ │ │ │ ┌───────────────── day of week (0 - 6) (Sunday to Saturday;
- │ │ │ │ │                                         7 is also Sunday)
- │ │ │ │ │
- │ │ │ │ │
- * * * * *  command to execute
-*/
-cron.schedule('* * * * *', function(){
-  logger.debug('running a task every minute...... ' + new Date().toISOString() );
-  
-  // make sure we know the state of the valves.
-});
-
-cron.schedule('24 * * * *', function(){
-    valve.openValve1();     
-});
 
 router.use(function (req,res,next) {
   logger.info("/" + req.method);
