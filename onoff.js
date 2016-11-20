@@ -9,7 +9,9 @@ var Gpio = require('onoff').Gpio,
   valve1Motor  = new Gpio(25, 'out');
   
 var valve1State = null;
+var valve1DesiredState = null;
 var valve2State = null;
+var valve2DesiredState = null;
 
 var OFF = 0;
 var ON = 1;  
@@ -17,12 +19,17 @@ var ON = 1;
 valve1.watch(function(err, value) {
  console.log("Valve1, detected : " + value + "  err : " + err );
  sleep.usleep(100);
- valve1Motor.writeSync(OFF);
- if ( 1 == value ) {
-	valve1State = "OPEN";
+ 
+ if ( valve1DesitedState == "OPEN" && value == 1 ){
+     valve1State = "OPEN";
+     valve1Motor.writeSync(OFF);
  }
- else
-	valve1State = "CLOSED";
+  else if ( valve1DesitedState == "CLOSED" && value == 0 ){
+     valve1Motor.writeSync(OFF);
+     valve1State = "CLOSED";
+ }
+ console.log("Valve1 is in state : " + valve1State );
+
 });
 
 valve2.watch(function(err, value) {
@@ -47,9 +54,11 @@ function valve1Open(){
    if ( valve1State == null )
    {
 		console.log("State unknown");
+                valve1DesitedState = "OPEN";
 		valve1Turn();
-		sleep.sleep(3); // wait for the valve to turn to find out the state
+                console.log("Valve1 is in state : " + valve1State );
         if ( valve1State == "CLOSED" ) {
+                valve1DesitedState = "CLOSED";
 		valve1Turn();  // we want it open - so keep turning
 	}
    }
