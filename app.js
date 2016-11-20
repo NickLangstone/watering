@@ -28,12 +28,31 @@ logger.setLevel('debug');
 
 logger.debug('Logging established.');
 
+
+
+/*
+
+Cron Format
+
+ ┌───────────── min (0 - 59)
+ │ ┌────────────── hour (0 - 23)
+ │ │ ┌─────────────── day of month (1 - 31)
+ │ │ │ ┌──────────────── month (1 - 12)
+ │ │ │ │ ┌───────────────── day of week (0 - 6) (Sunday to Saturday;
+ │ │ │ │ │                                         7 is also Sunday)
+ │ │ │ │ │
+ │ │ │ │ │
+ * * * * *  command to execute
+*/
 cron.schedule('* * * * *', function(){
   logger.debug('running a task every minute...... ' + new Date().toISOString() );
   
   // make sure we know the state of the valves.
 });
 
+cron.schedule('24 * * * *', function(){
+    valve.openValve1();     
+});
 
 router.use(function (req,res,next) {
   logger.info("/" + req.method);
