@@ -9,7 +9,7 @@ var valve2State = null;
 var OFF = 0;
 var ON = 1;  
 
-Valve1.watch(function(err, value) {
+valve1.watch(function(err, value) {
  console.log("Valve1, detected : " + value + "  err : " + err );
  valve1Motor.writeSync(OFF);
  if ( 1 == value ) {
@@ -19,7 +19,7 @@ Valve1.watch(function(err, value) {
 	valve1State = "CLOSED";
 });
 
-Valve2.watch(function(err, value) {
+valve2.watch(function(err, value) {
  console.log("Valve2, detected : " + value + "  err : " + err );
   if ( 1 == value ) {
 	valve2State = "OPEN";
