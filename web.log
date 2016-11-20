@@ -18,3 +18,287 @@
 [2016-11-13 18:19:00.336] [DEBUG] mainlog - running a task every minute...... 2016-11-13T05:19:00.336Z
 [2016-11-13 18:20:00.382] [DEBUG] mainlog - running a task every minute...... 2016-11-13T05:20:00.382Z
 [2016-11-13 18:21:00.416] [DEBUG] mainlog - running a task every minute...... 2016-11-13T05:21:00.416Z
+[2016-11-20 03:04:53.459] [DEBUG] mainlog - Logging established.
+[2016-11-20 03:04:53.911] [INFO] mainlog - Example app listening on port 3000!
+[2016-11-20 03:05:00.741] [DEBUG] mainlog - running a task every minute...... 2016-11-20T03:05:00.740Z
+[2016-11-20 03:08:10.990] [DEBUG] mainlog - Logging established.
+[2016-11-20 03:08:11.441] [INFO] mainlog - Example app listening on port 3000!
+[2016-11-20 03:09:00.359] [DEBUG] mainlog - running a task every minute...... 2016-11-20T03:09:00.359Z
+[2016-11-20 03:09:29.360] [INFO] mainlog - /GET
+[2016-11-20 03:10:00.520] [DEBUG] mainlog - running a task every minute...... 2016-11-20T03:10:00.519Z
+[2016-11-20 03:10:24.299] [INFO] mainlog - /GET
+[2016-11-20 03:10:24.660] [INFO] mainlog - /GET
+[2016-11-20 03:10:25.068] [INFO] mainlog - /GET
+[2016-11-20 03:10:40.139] [INFO] mainlog - /GET
+[2016-11-20 03:10:40.145] [DEBUG] mainlog - open1 called
+[2016-11-20 03:11:00.649] [DEBUG] mainlog - running a task every minute...... 2016-11-20T03:11:00.649Z
+[2016-11-20 03:11:09.005] [INFO] mainlog - /GET
+[2016-11-20 03:11:09.013] [DEBUG] mainlog - close1 called
+[2016-11-20 03:11:22.319] [INFO] mainlog - /GET
+[2016-11-20 03:11:22.325] [DEBUG] mainlog - open1 called
+[2016-11-20 03:11:38.906] [INFO] mainlog - /GET
+[2016-11-20 03:11:38.912] [DEBUG] mainlog - close1 called
+[2016-11-20 03:14:53.085] [DEBUG] mainlog - Logging established.
+[2016-11-20 03:14:53.534] [INFO] mainlog - Example app listening on port 3000!
+[2016-11-20 03:15:00.366] [DEBUG] mainlog - running a task every minute...... 2016-11-20T03:15:00.366Z
+[2016-11-20 03:15:11.305] [INFO] mainlog - /GET
+[2016-11-20 03:15:12.426] [INFO] mainlog - /GET
+[2016-11-20 03:15:20.700] [INFO] mainlog - /GET
+[2016-11-20 03:15:20.842] [INFO] mainlog - /GET
+[2016-11-20 03:15:21.867] [INFO] mainlog - /GET
+[2016-11-20 03:16:00.545] [DEBUG] mainlog - running a task every minute...... 2016-11-20T03:16:00.545Z
+[2016-11-20 03:16:38.528] [INFO] mainlog - /GET
+[2016-11-20 03:16:38.581] [DEBUG] mainlog - open1 called
+[2016-11-20 03:16:38.771] [INFO] mainlog - /GET
+[2016-11-20 03:16:39.444] [INFO] mainlog - /GET
+[2016-11-20 03:19:19.526] [DEBUG] mainlog - Logging established.
+[2016-11-20 03:19:19.981] [INFO] mainlog - Example app listening on port 3000!
+[2016-11-20 03:19:29.363] [INFO] mainlog - /GET
+[2016-11-20 03:19:29.383] [DEBUG] mainlog - open1 called
+[2016-11-20 03:19:29.692] [INFO] mainlog - /GET
+[2016-11-20 03:19:30.314] [INFO] mainlog - /GET
+[2016-11-20 03:21:20.509] [DEBUG] mainlog - Logging established.
+[2016-11-20 03:21:20.964] [INFO] mainlog - Example app listening on port 3000!
+[2016-11-20 03:21:26.101] [INFO] mainlog - /GET
+[2016-11-20 03:21:26.122] [DEBUG] mainlog - open1 called
+[2016-11-20 03:21:26.519] [INFO] mainlog - /GET
+[2016-11-20 03:21:27.191] [INFO] mainlog - /GET
+[2016-11-20 03:21:51.563] [INFO] mainlog - /GET
+[2016-11-20 03:21:51.572] [DEBUG] mainlog - close1 called
+[2016-11-20 03:21:51.802] [INFO] mainlog - /GET
+[2016-11-20 03:21:52.463] [INFO] mainlog - /GET
+[2016-11-20 03:22:00.900] [DEBUG] mainlog - running a task every minute...... 2016-11-20T03:22:00.900Z
+[2016-11-20 03:22:01.188] [INFO] mainlog - /GET
+[2016-11-20 03:22:01.194] [DEBUG] mainlog - open1 called
+[2016-11-20 03:22:01.289] [INFO] mainlog - /GET
+[2016-11-20 03:22:01.604] [INFO] mainlog - /GET
+[2016-11-20 03:23:46.704] [DEBUG] mainlog - Logging established.
+[2016-11-20 03:23:47.153] [INFO] mainlog - Example app listening on port 3000!
+[2016-11-20 03:23:50.897] [INFO] mainlog - /GET
+[2016-11-20 03:23:50.916] [DEBUG] mainlog - open1 called
+[2016-11-20 03:23:51.313] [INFO] mainlog - /GET
+[2016-11-20 03:23:51.838] [INFO] mainlog - /GET
+[2016-11-20 03:24:00.045] [DEBUG] mainlog - running a task every minute...... 2016-11-20T03:24:00.045Z
+[2016-11-20 03:24:02.801] [INFO] mainlog - /GET
+[2016-11-20 03:24:02.810] [DEBUG] mainlog - close1 called
+[2016-11-20 03:24:02.942] [INFO] mainlog - /GET
+[2016-11-20 03:24:03.351] [INFO] mainlog - /GET
+[2016-11-20 03:26:08.436] [DEBUG] mainlog - Logging established.
+[2016-11-20 03:26:08.884] [INFO] mainlog - Example app listening on port 3000!
+[2016-11-20 03:26:15.076] [INFO] mainlog - /GET
+[2016-11-20 03:26:15.095] [DEBUG] mainlog - close1 called
+[2016-11-20 03:26:15.493] [INFO] mainlog - /GET
+[2016-11-20 03:26:16.031] [INFO] mainlog - /GET
+[2016-11-20 03:26:33.019] [INFO] mainlog - /GET
+[2016-11-20 03:26:33.028] [DEBUG] mainlog - open1 called
+[2016-11-20 03:26:33.164] [INFO] mainlog - /GET
+[2016-11-20 03:26:33.884] [INFO] mainlog - /GET
+[2016-11-20 03:26:41.970] [INFO] mainlog - /GET
+[2016-11-20 03:26:41.976] [DEBUG] mainlog - close1 called
+[2016-11-20 03:26:42.072] [INFO] mainlog - /GET
+[2016-11-20 03:26:42.499] [INFO] mainlog - /GET
+[2016-11-20 03:27:00.803] [DEBUG] mainlog - running a task every minute...... 2016-11-20T03:27:00.803Z
+[2016-11-20 03:28:00.930] [DEBUG] mainlog - running a task every minute...... 2016-11-20T03:28:00.930Z
+[2016-11-20 03:29:22.024] [DEBUG] mainlog - Logging established.
+[2016-11-20 03:29:22.475] [INFO] mainlog - Example app listening on port 3000!
+[2016-11-20 03:29:27.181] [INFO] mainlog - /GET
+[2016-11-20 03:29:27.201] [DEBUG] mainlog - close2 called
+[2016-11-20 03:29:28.100] [INFO] mainlog - /GET
+[2016-11-20 03:29:38.769] [INFO] mainlog - /GET
+[2016-11-20 03:29:38.777] [DEBUG] mainlog - close1 called
+[2016-11-20 03:29:38.875] [INFO] mainlog - /GET
+[2016-11-20 03:29:39.332] [INFO] mainlog - /GET
+[2016-11-20 03:29:49.168] [INFO] mainlog - /GET
+[2016-11-20 03:29:49.175] [DEBUG] mainlog - open1 called
+[2016-11-20 03:29:49.265] [INFO] mainlog - /GET
+[2016-11-20 03:29:49.674] [INFO] mainlog - /GET
+[2016-11-20 03:29:53.104] [INFO] mainlog - /GET
+[2016-11-20 03:29:53.110] [DEBUG] mainlog - open1 called
+[2016-11-20 03:29:53.170] [INFO] mainlog - /GET
+[2016-11-20 03:29:53.553] [INFO] mainlog - /GET
+[2016-11-20 03:34:25.494] [DEBUG] mainlog - Logging established.
+[2016-11-20 03:34:25.951] [INFO] mainlog - Example app listening on port 3000!
+[2016-11-20 03:34:36.327] [INFO] mainlog - /GET
+[2016-11-20 03:34:36.346] [DEBUG] mainlog - open1 called
+[2016-11-20 03:34:36.748] [INFO] mainlog - /GET
+[2016-11-20 03:34:37.407] [INFO] mainlog - /GET
+[2016-11-20 03:34:53.132] [INFO] mainlog - /GET
+[2016-11-20 03:34:53.141] [DEBUG] mainlog - open2 called
+[2016-11-20 03:34:53.418] [INFO] mainlog - /GET
+[2016-11-20 03:34:53.846] [INFO] mainlog - /GET
+[2016-11-20 03:35:33.019] [DEBUG] mainlog - Logging established.
+[2016-11-20 03:35:33.479] [INFO] mainlog - Example app listening on port 3000!
+[2016-11-20 03:36:11.400] [DEBUG] mainlog - Logging established.
+[2016-11-20 03:36:11.861] [INFO] mainlog - Example app listening on port 3000!
+[2016-11-20 03:36:17.917] [INFO] mainlog - /GET
+[2016-11-20 03:36:17.938] [DEBUG] mainlog - open2 called
+[2016-11-20 03:36:18.251] [INFO] mainlog - /GET
+[2016-11-20 03:36:18.843] [INFO] mainlog - /GET
+[2016-11-20 03:37:58.651] [DEBUG] mainlog - Logging established.
+[2016-11-20 03:37:59.103] [INFO] mainlog - Example app listening on port 3000!
+[2016-11-20 03:38:00.923] [DEBUG] mainlog - running a task every minute...... 2016-11-20T03:38:00.923Z
+[2016-11-20 03:38:05.628] [INFO] mainlog - /GET
+[2016-11-20 03:38:05.649] [DEBUG] mainlog - open2 called
+[2016-11-20 03:38:05.970] [INFO] mainlog - /GET
+[2016-11-20 03:38:06.643] [INFO] mainlog - /GET
+[2016-11-20 03:38:22.596] [INFO] mainlog - /GET
+[2016-11-20 03:38:22.605] [DEBUG] mainlog - close1 called
+[2016-11-20 03:38:22.698] [INFO] mainlog - /GET
+[2016-11-20 03:38:23.107] [INFO] mainlog - /GET
+[2016-11-20 03:38:29.363] [INFO] mainlog - /GET
+[2016-11-20 03:38:29.370] [DEBUG] mainlog - close2 called
+[2016-11-20 03:38:29.588] [INFO] mainlog - /GET
+[2016-11-20 03:38:29.907] [INFO] mainlog - /GET
+[2016-11-20 03:38:55.670] [INFO] mainlog - /GET
+[2016-11-20 03:38:55.678] [DEBUG] mainlog - open1 called
+[2016-11-20 03:38:55.885] [INFO] mainlog - /GET
+[2016-11-20 03:38:56.391] [INFO] mainlog - /GET
+[2016-11-20 03:39:00.105] [DEBUG] mainlog - running a task every minute...... 2016-11-20T03:39:00.105Z
+[2016-11-20 03:39:02.121] [INFO] mainlog - /GET
+[2016-11-20 03:39:02.128] [DEBUG] mainlog - open2 called
+[2016-11-20 03:39:02.224] [INFO] mainlog - /GET
+[2016-11-20 03:39:02.941] [INFO] mainlog - /GET
+[2016-11-20 03:39:16.663] [INFO] mainlog - /GET
+[2016-11-20 03:39:16.669] [DEBUG] mainlog - close1 called
+[2016-11-20 03:39:17.072] [INFO] mainlog - /GET
+[2016-11-20 03:39:17.584] [INFO] mainlog - /GET
+[2016-11-20 03:39:18.131] [INFO] mainlog - /GET
+[2016-11-20 03:39:18.137] [DEBUG] mainlog - close2 called
+[2016-11-20 03:39:18.203] [INFO] mainlog - /GET
+[2016-11-20 03:39:18.526] [INFO] mainlog - /GET
+[2016-11-20 03:39:29.770] [INFO] mainlog - /GET
+[2016-11-20 03:39:29.776] [DEBUG] mainlog - open1 called
+[2016-11-20 03:39:29.985] [INFO] mainlog - /GET
+[2016-11-20 03:39:30.487] [INFO] mainlog - /GET
+[2016-11-20 03:39:32.744] [INFO] mainlog - /GET
+[2016-11-20 03:39:32.750] [DEBUG] mainlog - open2 called
+[2016-11-20 03:39:32.795] [INFO] mainlog - /GET
+[2016-11-20 03:39:33.134] [INFO] mainlog - /GET
+[2016-11-20 03:39:51.890] [INFO] mainlog - /GET
+[2016-11-20 03:39:51.896] [DEBUG] mainlog - open2 called
+[2016-11-20 03:39:51.991] [INFO] mainlog - /GET
+[2016-11-20 03:39:52.605] [INFO] mainlog - /GET
+[2016-11-20 03:39:56.189] [INFO] mainlog - /GET
+[2016-11-20 03:39:56.195] [DEBUG] mainlog - open2 called
+[2016-11-20 03:39:56.251] [INFO] mainlog - /GET
+[2016-11-20 03:39:56.599] [INFO] mainlog - /GET
+[2016-11-20 03:40:00.229] [DEBUG] mainlog - running a task every minute...... 2016-11-20T03:40:00.229Z
+[2016-11-20 03:40:15.855] [INFO] mainlog - /GET
+[2016-11-20 03:40:15.862] [DEBUG] mainlog - close2 called
+[2016-11-20 03:40:16.055] [INFO] mainlog - /GET
+[2016-11-20 03:40:16.670] [INFO] mainlog - /GET
+[2016-11-20 03:40:28.463] [INFO] mainlog - /GET
+[2016-11-20 03:40:28.469] [DEBUG] mainlog - close1 called
+[2016-11-20 03:40:28.528] [INFO] mainlog - /GET
+[2016-11-20 03:40:28.958] [INFO] mainlog - /GET
+[2016-11-20 03:40:49.196] [DEBUG] mainlog - Logging established.
+[2016-11-20 03:40:49.647] [INFO] mainlog - Example app listening on port 3000!
+[2016-11-20 03:41:00.124] [INFO] mainlog - /GET
+[2016-11-20 03:41:00.145] [DEBUG] mainlog - open2 called
+[2016-11-20 03:41:00.483] [DEBUG] mainlog - running a task every minute...... 2016-11-20T03:41:00.483Z
+[2016-11-20 03:41:00.542] [INFO] mainlog - /GET
+[2016-11-20 03:41:01.112] [INFO] mainlog - /GET
+[2016-11-20 03:41:10.991] [INFO] mainlog - /GET
+[2016-11-20 03:41:11.000] [DEBUG] mainlog - open1 called
+[2016-11-20 03:41:11.147] [INFO] mainlog - /GET
+[2016-11-20 03:41:11.453] [INFO] mainlog - /GET
+[2016-11-20 03:41:21.596] [INFO] mainlog - /GET
+[2016-11-20 03:41:21.604] [DEBUG] mainlog - close1 called
+[2016-11-20 03:41:21.694] [INFO] mainlog - /GET
+[2016-11-20 03:41:22.001] [INFO] mainlog - /GET
+[2016-11-20 03:41:30.295] [INFO] mainlog - /GET
+[2016-11-20 03:41:30.302] [DEBUG] mainlog - close2 called
+[2016-11-20 03:41:30.398] [INFO] mainlog - /GET
+[2016-11-20 03:41:30.808] [INFO] mainlog - /GET
+[2016-11-20 03:56:49.781] [DEBUG] mainlog - Logging established.
+[2016-11-20 03:56:50.236] [INFO] mainlog - Watering app listening on port 3000!
+[2016-11-20 03:56:57.670] [INFO] mainlog - /GET
+[2016-11-20 03:56:58.793] [INFO] mainlog - /GET
+[2016-11-20 03:57:00.072] [DEBUG] mainlog - running a task every minute...... 2016-11-20T03:57:00.071Z
+[2016-11-20 03:57:03.165] [INFO] mainlog - /GET
+[2016-11-20 03:57:03.176] [DEBUG] mainlog - close1 called
+[2016-11-20 03:57:03.846] [INFO] mainlog - /GET
+[2016-11-20 03:57:09.049] [INFO] mainlog - /GET
+[2016-11-20 03:57:09.057] [DEBUG] mainlog - close2 called
+[2016-11-20 03:57:09.616] [INFO] mainlog - /GET
+[2016-11-20 03:57:16.068] [INFO] mainlog - /GET
+[2016-11-20 03:57:16.075] [DEBUG] mainlog - open1 called
+[2016-11-20 03:57:16.682] [INFO] mainlog - /GET
+[2016-11-20 03:57:17.910] [INFO] mainlog - /GET
+[2016-11-20 03:57:17.918] [DEBUG] mainlog - open2 called
+[2016-11-20 03:57:18.340] [INFO] mainlog - /GET
+[2016-11-20 03:57:22.006] [INFO] mainlog - /GET
+[2016-11-20 03:57:22.013] [DEBUG] mainlog - close2 called
+[2016-11-20 03:57:22.519] [INFO] mainlog - /GET
+[2016-11-20 03:57:22.544] [INFO] mainlog - /GET
+[2016-11-20 03:57:22.550] [DEBUG] mainlog - close1 called
+[2016-11-20 03:57:23.031] [INFO] mainlog - /GET
+[2016-11-20 03:57:53.853] [INFO] mainlog - /GET
+[2016-11-20 03:57:54.672] [INFO] mainlog - /GET
+[2016-11-20 03:57:57.798] [INFO] mainlog - /GET
+[2016-11-20 03:57:58.257] [INFO] mainlog - /GET
+[2016-11-20 03:58:00.186] [DEBUG] mainlog - running a task every minute...... 2016-11-20T03:58:00.186Z
+[2016-11-20 03:58:01.395] [INFO] mainlog - /GET
+[2016-11-20 03:58:02.620] [INFO] mainlog - /GET
+[2016-11-20 03:58:03.010] [INFO] mainlog - /GET
+[2016-11-20 03:59:00.336] [DEBUG] mainlog - running a task every minute...... 2016-11-20T03:59:00.336Z
+[2016-11-20 04:00:00.468] [DEBUG] mainlog - running a task every minute...... 2016-11-20T04:00:00.468Z
+[2016-11-20 04:01:00.599] [DEBUG] mainlog - running a task every minute...... 2016-11-20T04:01:00.599Z
+[2016-11-20 04:02:00.730] [DEBUG] mainlog - running a task every minute...... 2016-11-20T04:02:00.729Z
+[2016-11-20 04:03:00.860] [DEBUG] mainlog - running a task every minute...... 2016-11-20T04:03:00.859Z
+[2016-11-20 04:04:00.991] [DEBUG] mainlog - running a task every minute...... 2016-11-20T04:04:00.991Z
+[2016-11-20 04:04:26.248] [DEBUG] mainlog - Logging established.
+[2016-11-20 04:04:26.703] [INFO] mainlog - Watering app listening on port 3000!
+[2016-11-20 04:05:00.588] [DEBUG] mainlog - running a task every minute...... 2016-11-20T04:05:00.587Z
+[2016-11-20 04:06:17.617] [DEBUG] mainlog - Logging established.
+[2016-11-20 04:06:18.074] [INFO] mainlog - Watering app listening on port 3000!
+[2016-11-20 04:07:00.976] [DEBUG] mainlog - running a task every minute...... 2016-11-20T04:07:00.976Z
+[2016-11-20 04:08:02.844] [DEBUG] mainlog - Logging established.
+[2016-11-20 04:08:03.300] [INFO] mainlog - Watering app listening on port 3000!
+[2016-11-20 04:09:00.270] [DEBUG] mainlog - running a task every minute...... 2016-11-20T04:09:00.270Z
+[2016-11-20 04:09:00.278] [DEBUG] mainlog -  valve.valve1State() : function valve1State(){
+	return valve1State;
+}
+[2016-11-20 04:13:20.375] [DEBUG] mainlog - Logging established.
+[2016-11-20 04:13:20.831] [INFO] mainlog - Watering app listening on port 3000!
+[2016-11-20 04:13:32.387] [INFO] mainlog - /GET
+[2016-11-20 04:13:33.524] [INFO] mainlog - /GET
+[2016-11-20 04:14:00.789] [DEBUG] mainlog - running a task every minute...... 2016-11-20T04:14:00.788Z
+[2016-11-20 04:14:00.796] [DEBUG] mainlog -  valve.valve1State() : function valve1State(){
+	return valve1State;
+}
+[2016-11-20 04:14:05.328] [INFO] mainlog - /GET
+[2016-11-20 04:14:05.337] [DEBUG] mainlog - close2 called
+[2016-11-20 04:14:06.249] [INFO] mainlog - /GET
+[2016-11-20 04:14:08.391] [INFO] mainlog - /GET
+[2016-11-20 04:14:08.398] [DEBUG] mainlog - close2 called
+[2016-11-20 04:14:08.813] [INFO] mainlog - /GET
+[2016-11-20 04:14:09.625] [INFO] mainlog - /GET
+[2016-11-20 04:14:09.632] [DEBUG] mainlog - open2 called
+[2016-11-20 04:14:10.063] [INFO] mainlog - /GET
+[2016-11-20 04:14:11.373] [INFO] mainlog - /GET
+[2016-11-20 04:14:11.381] [DEBUG] mainlog - close1 called
+[2016-11-20 04:14:11.798] [INFO] mainlog - /GET
+[2016-11-20 04:14:12.722] [INFO] mainlog - /GET
+[2016-11-20 04:14:12.730] [DEBUG] mainlog - open1 called
+[2016-11-20 04:14:13.134] [INFO] mainlog - /GET
+[2016-11-20 04:14:26.114] [INFO] mainlog - /GET
+[2016-11-20 04:14:26.120] [DEBUG] mainlog - close1 called
+[2016-11-20 04:14:26.524] [INFO] mainlog - /GET
+[2016-11-20 04:16:24.328] [DEBUG] mainlog - Logging established.
+[2016-11-20 04:16:24.778] [INFO] mainlog - Watering app listening on port 3000!
+[2016-11-20 04:16:26.265] [INFO] mainlog - /GET
+[2016-11-20 04:16:26.568] [INFO] mainlog - /GET
+[2016-11-20 04:16:27.813] [INFO] mainlog - /GET
+[2016-11-20 04:16:29.288] [INFO] mainlog - /GET
+[2016-11-20 04:16:29.295] [DEBUG] mainlog - close1 called
+[2016-11-20 04:16:29.748] [INFO] mainlog - /GET
+[2016-11-20 04:16:31.506] [INFO] mainlog - /GET
+[2016-11-20 04:16:31.513] [DEBUG] mainlog - close2 called
+[2016-11-20 04:16:31.935] [INFO] mainlog - /GET
+[2016-11-20 04:16:39.757] [INFO] mainlog - /GET
+[2016-11-20 04:16:39.764] [DEBUG] mainlog - open1 called
+[2016-11-20 04:16:40.200] [INFO] mainlog - /GET
+[2016-11-20 04:16:40.361] [INFO] mainlog - /GET
+[2016-11-20 04:16:40.368] [DEBUG] mainlog - open2 called
+[2016-11-20 04:16:40.709] [INFO] mainlog - /GET

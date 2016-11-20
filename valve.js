@@ -119,12 +119,6 @@ var closeValve2 = function valve2Close(){
 	}
 }
 
-var valve1State = function valve1State(){
-	return valve1State;
-}
-var valve2State = function valve2State(){
-	return valve2State;
-}
 
 // Cleanup
 function exit() {
@@ -139,6 +133,5 @@ process.on('SIGINT', exit);
 exports.openValve1 = openValve1;
 exports.openValve2 = openValve2;
 exports.closeValve1 = closeValve1;
-exports.valve1State = valve1State;
-exports.valve2State = valve2State;
+exports.closeValve2 = closeValve2;
 
