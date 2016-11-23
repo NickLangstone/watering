@@ -22,16 +22,25 @@
 </div>
 <br/>
 <div class="jumbotron"> <p>
-
-
+<script>
+$.get( "/getvalve1status", function( data ) {
+  name = data.name;
+});
+</script>
+<div>
 <a href="/close1" class="btn btn-primary" role="button">Valve 1 Close</a>
 <a href="/open1" class="btn btn-primary" role="button">Valve 1 Open</a>
+<br/>
+<a href="/valve/1/time/300" class="btn btn-info" role="button">Valve 1 Open for 5 min</a>
 
-
-
+</div>
+<br/>
+<div>
 <a href="/close2" class="btn btn-info" role="button">Valve 2 Close</a>
 <a href="/open2" class="btn btn-info" role="button">Valve 2 Open</a>
-
+<br/>
+<a href="/valve/2/time/300" class="btn btn-info" role="button">Valve 2 Open for 5 min</a>
+</div>
 
 
 

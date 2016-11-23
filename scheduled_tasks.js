@@ -25,11 +25,12 @@ Cron Format   https://github.com/merencia/node-cron
  # * * * * * *
 */
 
-cron.schedule('*/20 * * * * *', function(){
-  logger.debug('20  running a task every minute...... ' + new Date().toISOString() );
-  
+//cron.schedule('*/20 * * * * *', function(){
+//  logger.debug('20  running a task every minute...... ' + new Date().toISOString() );
+//  
   // make sure we know the state of the valves.
-});
+//});
+
 // open 6:02
 cron.schedule('6 18 * * *', function(){
 logger.debug(' Open Valve 1 ');
