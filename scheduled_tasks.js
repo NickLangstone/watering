@@ -31,14 +31,14 @@ Cron Format   https://github.com/merencia/node-cron
   // make sure we know the state of the valves.
 //});
 
-// open 6:02
-cron.schedule('6 18 * * *', function(){
-logger.debug(' Open Valve 1 ');
+// open 6:05
+cron.schedule('6 5 * * *', function(){
+    logger.debug('CRON Open Valve 1 ');
     valve.openValve1();     
 });
-// close 6:11
-cron.schedule('11 18 * * *', function(){
-logger.debug(' Open Valve 1 ');
+// close 6:10
+cron.schedule('6 10 * * *', function(){
+    logger.debug('CRON Close Valve 1 ');
     valve.closeValve1();     
 });
 
