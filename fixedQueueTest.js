@@ -1,4 +1,4 @@
-var fixedQueue = require('./fixedQueue.js');
+var fixedQueue = require('./fixedqueue.js');
 
 
 var jobs = new fixedQueue(5);

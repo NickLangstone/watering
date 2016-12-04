@@ -1,6 +1,6 @@
 var logger = require('./logger.js');
 
-var fixedQueue = require('./fixedQueue.js');
+var fixedQueue = require('./fixedqueue.js');
 var history = new fixedQueue(100);
 
 var Gpio = require('onoff').Gpio,
