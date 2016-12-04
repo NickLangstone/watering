@@ -101,8 +101,8 @@ app.use("*",function(req,res){
   res.sendFile(path + "404.html");
 });
 
-app.listen(3000, function () {
-  logger.info('Watering app listening on port 3000!')
+app.listen(8080, function () {
+  logger.info('Watering app listening on port 8080!')
   
   logger.info('Closing Valves to ensure we are not loosing water !!')
   valve.closeValve1()
