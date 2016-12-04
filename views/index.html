@@ -7,6 +7,7 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.3/angular-route.min.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/base.css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -20,31 +21,47 @@
      </ul>
 </nav>
 </div>
-<br/>
-<div class="jumbotron"> <p>
+<div class="jumbotron"> 
 <script>
-$.get( "/getvalve1status", function( data ) {
-  name = data.name;
+
+// A $( document ).ready() block.
+$( document ).ready(function() {
+    getValveStatus();
+	
 });
+function getValveStatus() {
+$.get( "/getvalvestatus", function( response ) {
+console.log( "Status returned : " + JSON.stringify(response) );
+var display = "";
+for( var i = 0 ; i < response.status.length ; i++) {
+	display = display + "<li> <b>" + response.status[i].name + "</b>   " + response.status[i].status + " </li>";
+}
+
+  $(".status").html(display );
+  // update the status every 10 seconds
+  setTimeout(getValveStatus, 10000);
+});
+}
 </script>
-<div>
+
+<div class="status">
+</div>
+<div class="valve-buttons">
 <a href="/close1" class="btn btn-primary" role="button">Valve 1 Close</a>
 <a href="/open1" class="btn btn-primary" role="button">Valve 1 Open</a>
-<br/>
 <a href="/valve/1/time/300" class="btn btn-info" role="button">Valve 1 Open for 5 min</a>
 
 </div>
 <br/>
-<div>
-<a href="/close2" class="btn btn-info" role="button">Valve 2 Close</a>
-<a href="/open2" class="btn btn-info" role="button">Valve 2 Open</a>
-<br/>
+<div class="valve-buttons">
+<a href="/close2" class="btn btn-primary" role="button">Valve 2 Close</a>
+<a href="/open2" class="btn btn-primary" role="button">Valve 2 Open</a>
+
 <a href="/valve/2/time/300" class="btn btn-info" role="button">Valve 2 Open for 5 min</a>
 </div>
 
 
-
-</p></div>
+</div>
 </div>
 </body>
 </html>

@@ -41,19 +41,27 @@ var closeValve2 = function valve2Close(){
    valve2State = "CLOSED";
    logger.debug("valve2Open()  state :" + valve2State);
 }
+function getStatus(){
 
-var statusValve1 = function statusValve1(){
-    return valve1State;
-}
+	if ( null == valve1State || null == valve2State ) {
+	// only randomize if we do not know the current state.
+		var statusArray = [
+			'OPEN',
+			'CLOSED'
+		];
+		var randomNumber1 = Math.floor(Math.random()*statusArray.length);
+		var randomNumber2 = Math.floor(Math.random()*statusArray.length);
 
-var statusValve2 = function statusValve2(){
-   return valve2State ;
+		return  { status : [ { name : "Valve1", status: statusArray[randomNumber1]},{ name : "Valve2", status: statusArray[randomNumber2]}]};
+	}
+	else
+		return  { status : [ { name : "Valve1", status: valve1State},{ name : "Valve2", status: valve2State}]};
+
 }
 
 exports.openValve1 = openValve1;
 exports.openValve2 = openValve2;
 exports.closeValve1 = closeValve1;
 exports.closeValve2 = closeValve2;
-exports.statusValve1 = valve1State;
-exports.statusValve2 = valve2State;
+exports.getStatus = getStatus;
 

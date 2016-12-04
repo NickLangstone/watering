@@ -119,6 +119,11 @@ var closeValve2 = function valve2Close(){
     }
 }
 
+function getStatus(){
+
+	return  { status : [ { name : "Valve1", status: valve1State},{ name : "Valve2", status: valve2State}]};
+}
+
 
 // Cleanup
 function exit() {
@@ -134,4 +139,5 @@ exports.openValve1 = openValve1;
 exports.openValve2 = openValve2;
 exports.closeValve1 = closeValve1;
 exports.closeValve2 = closeValve2;
+exports.getStatus = getStatus;
 

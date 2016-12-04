@@ -14,6 +14,7 @@ var schedule = require('./scheduled_tasks.js');
 var router = express.Router();
 var path = __dirname + '/views/';
 
+app.use(express.static('public'))
 
 router.use(function (req,res,next) {
   logger.info("/" + req.method);
@@ -48,11 +49,16 @@ function close1(){
  logger.debug("open1for5min 5 min timeout function called -- closing valve");
 valve.closeValve1();
 }
-router.get("/valve/1/time/:time",function(req,res){
-    logger.debug("open1for5min called time:" + req.params.time);
-    valve.openValve1();
-	
-	setTimeout( close1 , req.params.time *1000 );
+router.get("/valve/:valve/time/:time",function(req,res){
+    logger.debug("open  valve " + req.params.valve + " called for time:" + req.params.time);
+	if ( req.params.valve == 1 ) {
+		valve.openValve1();
+		setTimeout( close1 , req.params.time *1000 );
+	}
+	if ( req.params.valve == 2 ) {
+		valve.openValve2();
+		setTimeout( close2 , req.params.time *1000 );
+	}
     res.sendFile(path + "index.html");
 });
 
@@ -68,10 +74,13 @@ router.get("/open2",function(req,res){
     res.sendFile(path + "index.html");
 });
 
-router.get("/getvalve1status",function(req,res){
-    logger.debug("getvalve1status called");
-   logger.debug("getvalve1status called - Status :" + valve.statusValve1 );
-    res.json({ status: valve.statusValve1  });
+router.get("/getvalvestatus",function(req,res){
+    logger.debug("getvalvestatus called");
+	
+	//var status = { status : [ { name : "Valve1", status: "OPEN"},{ name : "Valve2", status: "OPEN"}]};
+	valve.getStatus()
+   logger.debug("getvalvestatus called - Status :" + JSON.stringify(valve.getStatus()) );
+    res.json(valve.getStatus());
 });
 
 function close2(){
@@ -94,6 +103,10 @@ app.use("*",function(req,res){
 
 app.listen(3000, function () {
   logger.info('Watering app listening on port 3000!')
+  
+  logger.info('Closing Valves to ensure we are not loosing water !!')
+  valve.closeValve1()
+  valve.closeValve2()
 })
 
 

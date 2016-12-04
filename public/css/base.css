@@ -1,0 +1,20 @@
+
+body {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 25px;
+    margin-left: 50px;
+}
+
+.status {
+	padding-left: 20px;
+    
+}
+.valve-buttons {
+	padding-left: 15px;
+ 	padding-top: 5px;
+}
+
+.btn {
+	margin: 4px;
+}
