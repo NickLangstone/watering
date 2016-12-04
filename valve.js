@@ -1,5 +1,8 @@
 var logger = require('./logger.js');
 
+var fixedQueue = require('./fixedQueue.js');
+var history = new fixedQueue(100);
+
 var Gpio = require('onoff').Gpio,
   valve1 = new Gpio(17, 'in', 'both'),
   valve2 = new Gpio(27, 'in', 'both'),
@@ -52,7 +55,6 @@ function valve1Turn(){
 function valve2Turn(){
     valve2Motor.writeSync(ON);
     logger.debug("Valve2 - turning");
-    
 }
 
 var openValve1 = function valve1Open(){
@@ -68,6 +70,7 @@ var openValve1 = function valve1Open(){
    {
     valve1Turn();
     }
+	history.push( { time: new Date(), action: "Valve 1 Opened"});
 }
 
 
@@ -84,6 +87,7 @@ var closeValve1 = function valve1Close(){
    {
     valve1Turn();
     }
+	history.push( { time: new Date(), action: "Valve 1 Closed"});
 }
 
 
@@ -102,6 +106,7 @@ var openValve2 = function valve2Open(){
    {
     valve2Turn();
     }
+	history.push( { time: new Date(), action: "Valve 2 Opened"});
 }
 
 var closeValve2 = function valve2Close(){
@@ -117,11 +122,13 @@ var closeValve2 = function valve2Close(){
    {
     valve2Turn();
     }
+	history.push( { time: new Date(), action: "Valve 2 Closed"});
+
 }
 
 function getStatus(){
 
-	return  { status : [ { name : "Valve1", status: valve1State},{ name : "Valve2", status: valve2State}]};
+	return  { status : [ { name : "Valve1", status: valve1State},{ name : "Valve2", status: valve2State}], history: history.getItems()};
 }
 
 

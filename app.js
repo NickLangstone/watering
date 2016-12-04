@@ -78,8 +78,8 @@ router.get("/getvalvestatus",function(req,res){
     logger.debug("getvalvestatus called");
 	
 	//var status = { status : [ { name : "Valve1", status: "OPEN"},{ name : "Valve2", status: "OPEN"}]};
-	valve.getStatus()
-   logger.debug("getvalvestatus called - Status :" + JSON.stringify(valve.getStatus()) );
+//	valve.getStatus()
+  // logger.debug("getvalvestatus called - Status :" + JSON.stringify(valve.getStatus()) );
     res.json(valve.getStatus());
 });
 

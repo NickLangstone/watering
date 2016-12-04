@@ -1,5 +1,7 @@
 
 var logger = require('./logger.js');
+var fixedQueue = require('./fixedQueue.js');
+var history = new fixedQueue(100);
   
 var valve1State = null;
 var valve1DesiredState = null;
@@ -17,6 +19,7 @@ var openValve1 = function valve1Open(){
    valve1DesiredState = "OPEN";
    valve1State = "OPEN";
    logger.debug("valve1Open()  state :" + valve1State);
+	history.push( { time: new Date(), action: "Valve 1 Opened"});
 
 }
 
@@ -26,13 +29,16 @@ var closeValve1 = function valve1Close(){
    valve1DesiredState = "CLOSED";
    valve1State = "CLOSED";
    logger.debug("valve1Open()  state :" + valve1State);
+   history.push( { time: new Date(), action: "Valve 1 Closed"});
+
 }
 
 var openValve2 = function valve2Open(){
    logger.debug("valve2Open() ");
    valve2DesiredState = "OPEN";
    valve2State = "OPEN" ;
-  
+  history.push( { time: new Date(), action: "Valve 2 Opened"});
+
 }
 
 var closeValve2 = function valve2Close(){
@@ -40,6 +46,8 @@ var closeValve2 = function valve2Close(){
    valve2DesiredState = "CLOSED";
    valve2State = "CLOSED";
    logger.debug("valve2Open()  state :" + valve2State);
+   history.push( { time: new Date(), action: "Valve 2 Closed"});
+
 }
 function getStatus(){
 
@@ -52,10 +60,11 @@ function getStatus(){
 		var randomNumber1 = Math.floor(Math.random()*statusArray.length);
 		var randomNumber2 = Math.floor(Math.random()*statusArray.length);
 
-		return  { status : [ { name : "Valve1", status: statusArray[randomNumber1]},{ name : "Valve2", status: statusArray[randomNumber2]}]};
+		return  { status : [ { name : "Valve1", status: statusArray[randomNumber1]},{ name : "Valve2", status: statusArray[randomNumber2]}], history: history.getItems()};
 	}
 	else
-		return  { status : [ { name : "Valve1", status: valve1State},{ name : "Valve2", status: valve2State}]};
+		return  { status : [ { name : "Valve1", status: valve1State},{ name : "Valve2", status: valve2State}], history: history.getItems()};
+
 
 }
 

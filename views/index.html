@@ -30,17 +30,23 @@ $( document ).ready(function() {
 	
 });
 function getValveStatus() {
-$.get( "/getvalvestatus", function( response ) {
-console.log( "Status returned : " + JSON.stringify(response) );
-var display = "";
-for( var i = 0 ; i < response.status.length ; i++) {
-	display = display + "<li> <b>" + response.status[i].name + "</b>   " + response.status[i].status + " </li>";
-}
-
-  $(".status").html(display );
-  // update the status every 10 seconds
-  setTimeout(getValveStatus, 10000);
-});
+	$.get( "/getvalvestatus", function( response ) {
+		console.log( "Status returned : " + JSON.stringify(response) );
+		var display = "";
+		for( var i = 0 ; i < response.status.length ; i++) {
+			display = display + "<li> <b>" + response.status[i].name + "</b>   " + response.status[i].status + " </li>";
+		}
+		$(".status").html(display );
+	 
+		var history = "";
+		for( var i = 0 ; i < response.history.length ; i++) {
+			history = history + "<li> <b>" + response.history[i].time + "</b>   " + response.history[i].action + " </li>";
+		}
+		$(".history").html(history );
+	 
+	  // update the status every 10 seconds
+	  setTimeout(getValveStatus, 10000);
+	});
 }
 </script>
 
@@ -61,6 +67,8 @@ for( var i = 0 ; i < response.status.length ; i++) {
 </div>
 
 
+<div class="history">
+</div>
 </div>
 </div>
 </body>
