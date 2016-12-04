@@ -87,12 +87,6 @@ function close2(){
  logger.debug("open2for5min 5 min timeout function called -- closing valve");
 valve.closeValve2()
 }
-router.get("/valve/2/time/:time",function(req,res){
-    logger.debug("open2for5min called time:" + req.params.time);
-    valve.openValve2();
-	setTimeout( close2 , req.params.time *1000 );
-    res.sendFile(path + "index.html");
-});
 
 
 app.use("/",router);
@@ -102,11 +96,13 @@ app.use("*",function(req,res){
 });
 
 app.listen(8080, function () {
-  logger.info('Watering app listening on port 8080!')
+  logger.info('Watering app listening on port 8080!');
   
-  logger.info('Closing Valves to ensure we are not loosing water !!')
-  valve.closeValve1()
-  valve.closeValve2()
-})
+  logger.info('Closing Valves to ensure we are not loosing water !!');
+  valve.openValve1();
+  valve.openValve2();
+  valve.closeValve1();
+  valve.closeValve2();
+});
 
 
