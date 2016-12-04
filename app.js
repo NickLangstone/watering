@@ -99,10 +99,7 @@ app.listen(8080, function () {
   logger.info('Watering app listening on port 8080!');
   
   logger.info('Closing Valves to ensure we are not loosing water !!');
-  valve.openValve1();
-  valve.openValve2();
-  valve.closeValve1();
-  valve.closeValve2();
+
 });
 
 
