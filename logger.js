@@ -4,7 +4,7 @@ var log4js = require('log4js');
 //log4js.loadAppender('console');
 log4js.loadAppender('file');
 //log4js.addAppender(log4js.appenders.console());
-log4js.addAppender(log4js.appenders.file('./web.log'), 'mainlog');
+log4js.addAppender(log4js.appenders.file('/home/pi/watering/web.log'), 'mainlog');
 
 var logger = log4js.getLogger('mainlog');
 logger.setLevel('debug');

@@ -36,10 +36,30 @@ cron.schedule('5 6 * * *', function(){
     logger.debug('CRON Open Valve 1 ');
     valve.openValve1();     
 });
+<<<<<<< Updated upstream
 // close 6:10
 cron.schedule('10 6 * * *', function(){
+=======
+// close 6:18
+cron.schedule('18 6 * * *', function(){
+>>>>>>> Stashed changes
     logger.debug('CRON Close Valve 1 ');
     valve.closeValve1();     
 });
 
+// ############ VALVE 2   Front Garden  ########
+// open 6:15
+cron.schedule('15 6 * * *', function(){
+    logger.debug('CRON Open Valve 2 ');
+    valve.openValve2();     
+});
+// close 6:20
+cron.schedule('20 6 * * *', function(){
+    logger.debug('CRON Close Valve 2 ');
+    valve.closeValve2();     
+});
+
+
+
 module.export = cron;
+
