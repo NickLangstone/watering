@@ -131,7 +131,7 @@ var closeValve2 = function valve2Close(){
 
 function getStatus(){
 
-	return  { status : [ { name : "Valve1", status: valve1State},{ name : "Valve2", status: valve2State}], history: history.getItems(), time : new Date() };
+	return  { status : [ { name : "Valve1", status: valve1State},{ name : "Valve2", status: valve2State}], history: history.getItems(), time :  dateFormat() };
 }
 
 

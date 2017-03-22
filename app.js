@@ -14,7 +14,11 @@ var schedule = require('./scheduled_tasks.js');
 var router = express.Router();
 var path = __dirname + '/views/';
 
+<<<<<<< HEAD
 app.use(express.static(path.join(__dirname, 'public')));
+=======
+app.use(express.static(__dirname + '/public'));
+>>>>>>> 99bd82345595d826902dd12d9ed69eeaa1707dd3
 
 router.use(function (req,res,next) {
   logger.info("/" + req.method);
