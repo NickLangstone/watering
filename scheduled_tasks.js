@@ -36,13 +36,8 @@ cron.schedule('5 6 * * *', function(){
     logger.debug('CRON Open Valve 1 ');
     valve.openValve1();     
 });
-<<<<<<< Updated upstream
-// close 6:10
-cron.schedule('10 6 * * *', function(){
-=======
 // close 6:18
 cron.schedule('18 6 * * *', function(){
->>>>>>> Stashed changes
     logger.debug('CRON Close Valve 1 ');
     valve.closeValve1();     
 });

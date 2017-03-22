@@ -4,12 +4,13 @@
   "description": "Watering System for home",
   "main": "app.js",
   "dependencies": {
+    "dateformat": "^3.0.2",
     "express": "^4.14.0",
     "log4js": "^1.0.1",
     "node-cron": "^1.1.2",
     "path": "^0.12.7",
-    "rpi-gpio": "*",
-    "sleep": "^5.0.0"
+    "rpi-gpio": "^0.9.1",
+    "sleep": "^5.1.1"
   },
   "repository": {
     "type": "git",

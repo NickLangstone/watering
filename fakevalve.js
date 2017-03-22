@@ -19,7 +19,7 @@ var openValve1 = function valve1Open(){
    valve1DesiredState = "OPEN";
    valve1State = "OPEN";
    logger.debug("valve1Open()  state :" + valve1State);
-	history.push( { time: new Date(), action: "Valve 1 Opened"});
+	history.push( { time: dateFormat(), action: "Valve 1 Opened"});
 
 }
 
@@ -29,7 +29,7 @@ var closeValve1 = function valve1Close(){
    valve1DesiredState = "CLOSED";
    valve1State = "CLOSED";
    logger.debug("valve1Open()  state :" + valve1State);
-   history.push( { time: new Date(), action: "Valve 1 Closed"});
+   history.push( { time: dateFormat(), action: "Valve 1 Closed"});
 
 }
 
@@ -37,7 +37,7 @@ var openValve2 = function valve2Open(){
    logger.debug("valve2Open() ");
    valve2DesiredState = "OPEN";
    valve2State = "OPEN" ;
-  history.push( { time: new Date(), action: "Valve 2 Opened"});
+  history.push( { time: dateFormat(), action: "Valve 2 Opened"});
 
 }
 
@@ -46,7 +46,7 @@ var closeValve2 = function valve2Close(){
    valve2DesiredState = "CLOSED";
    valve2State = "CLOSED";
    logger.debug("valve2Open()  state :" + valve2State);
-   history.push( { time: new Date(), action: "Valve 2 Closed"});
+   history.push( { time: dateFormat(), action: "Valve 2 Closed"});
 
 }
 function getStatus(){
