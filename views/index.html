@@ -33,6 +33,7 @@ function getValveStatus() {
 	$.get( "/getvalvestatus", function( response ) {
 		console.log( "Status returned : " + JSON.stringify(response) );
 		var display = "";
+		$(".date").html(response.time );
 		for( var i = 0 ; i < response.status.length ; i++) {
 			display = display + "<li> <b>" + response.status[i].name + "</b>   " + response.status[i].status + " </li>";
 		}
@@ -50,8 +51,12 @@ function getValveStatus() {
 }
 </script>
 
+<div class="date">
+</div>
+<br/>
 <div class="status">
 </div>
+<br/>
 <div class="valve-buttons">
 <a href="/close1" class="btn btn-primary" role="button">Valve 1 Close</a>
 <a href="/open1" class="btn btn-primary" role="button">Valve 1 Open</a>
@@ -65,7 +70,7 @@ function getValveStatus() {
 
 <a href="/valve/2/time/300" class="btn btn-info" role="button">Valve 2 Open for 5 min</a>
 </div>
-
+<br/>
 <div class="history">
 </div>
 </div>
