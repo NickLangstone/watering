@@ -32,12 +32,12 @@ Cron Format   https://github.com/merencia/node-cron
 //});
 
 // open 6:05
-cron.schedule('6 5 * * *', function(){
+cron.schedule('5 6 * * *', function(){
     logger.debug('CRON Open Valve 1 ');
     valve.openValve1();     
 });
 // close 6:10
-cron.schedule('6 10 * * *', function(){
+cron.schedule('10 6 * * *', function(){
     logger.debug('CRON Close Valve 1 ');
     valve.closeValve1();     
 });

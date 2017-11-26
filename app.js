@@ -100,6 +100,8 @@ app.listen(8080, function () {
   
   logger.info('Closing Valves to ensure we are not loosing water !!');
 
+  valve.closeValve1();
+  valve.closeValve2();
 });
 
 
