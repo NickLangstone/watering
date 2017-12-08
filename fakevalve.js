@@ -61,10 +61,10 @@ function getStatus(){
 		var randomNumber1 = Math.floor(Math.random()*statusArray.length);
 		var randomNumber2 = Math.floor(Math.random()*statusArray.length);
 
-		return  { status : [ { name : "Valve1", status: statusArray[randomNumber1]},{ name : "Valve2", status: statusArray[randomNumber2]}], history: history.getItems()};
+		return  { status : [ { name : "Valve1", status: statusArray[randomNumber1]},{ name : "Valve2", status: statusArray[randomNumber2]}], history: history.getItems() , time :  dateFormat()};
 	}
 	else
-		return  { status : [ { name : "Valve1", status: valve1State},{ name : "Valve2", status: valve2State}], history: history.getItems()};
+		return  { status : [ { name : "Valve1", status: valve1State},{ name : "Valve2", status: valve2State}], history: history.getItems() , time :  dateFormat()};
 
 
 }
