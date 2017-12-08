@@ -308,3 +308,307 @@
 [2017-12-06 19:27:41.952] [DEBUG] mainlog - Data : {"time":"2017-12-06T06:27:41.952Z","formattedDate":"Wed Dec 06 2017 19:27:41","action":"Valve 1 Closed"}
 [2017-12-06 21:32:37.738] [DEBUG] mainlog - Logging established.
 [2017-12-06 21:32:37.738] [DEBUG] mainlog - Data : {"time":"2017-12-06T08:32:37.738Z","formattedDate":"Wed Dec 06 2017 21:32:37","action":"Valve 1 Closed"}
+[2017-12-08 20:37:07.840] [DEBUG] mainlog - Logging established.
+[2017-12-08 20:37:07.853] [ERROR] mainlog - USING FAKE VALVES
+[2017-12-08 20:37:07.869] [INFO] mainlog - Watering app listening on port 8080!
+[2017-12-08 20:37:07.869] [INFO] mainlog - Closing Valves to ensure we are not loosing water !!
+[2017-12-08 20:37:07.870] [DEBUG] mainlog - valve1Close() 
+[2017-12-08 20:37:07.870] [DEBUG] mainlog - valve1Open()  state :CLOSED
+[2017-12-08 20:37:07.871] [DEBUG] mainlog - valve2Close() 
+[2017-12-08 20:37:07.872] [DEBUG] mainlog - valve2Open()  state :CLOSED
+[2017-12-08 20:37:29.751] [INFO] mainlog - /GET
+[2017-12-08 20:37:30.034] [INFO] mainlog - /GET
+[2017-12-08 20:37:30.035] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:37:30.556] [INFO] mainlog - /GET
+[2017-12-08 20:37:38.547] [INFO] mainlog - /GET
+[2017-12-08 20:37:38.722] [INFO] mainlog - /GET
+[2017-12-08 20:37:38.723] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:37:38.925] [INFO] mainlog - /GET
+[2017-12-08 20:37:48.767] [INFO] mainlog - /GET
+[2017-12-08 20:37:48.768] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:37:50.508] [INFO] mainlog - /GET
+[2017-12-08 20:37:58.846] [INFO] mainlog - /GET
+[2017-12-08 20:37:58.848] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:38:09.848] [INFO] mainlog - /GET
+[2017-12-08 20:38:09.849] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:38:20.845] [INFO] mainlog - /GET
+[2017-12-08 20:38:20.846] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:38:30.852] [INFO] mainlog - /GET
+[2017-12-08 20:38:30.853] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:38:40.867] [INFO] mainlog - /GET
+[2017-12-08 20:38:40.869] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:38:45.249] [INFO] mainlog - /GET
+[2017-12-08 20:38:45.554] [INFO] mainlog - /GET
+[2017-12-08 20:38:45.554] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:38:45.995] [INFO] mainlog - /GET
+[2017-12-08 20:38:55.687] [INFO] mainlog - /GET
+[2017-12-08 20:38:55.692] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:39:05.717] [INFO] mainlog - /GET
+[2017-12-08 20:39:05.719] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:39:15.849] [INFO] mainlog - /GET
+[2017-12-08 20:39:15.850] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:39:26.862] [INFO] mainlog - /GET
+[2017-12-08 20:39:26.863] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:39:37.848] [INFO] mainlog - /GET
+[2017-12-08 20:39:37.849] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:39:48.844] [INFO] mainlog - /GET
+[2017-12-08 20:39:48.845] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:39:59.650] [INFO] mainlog - /GET
+[2017-12-08 20:39:59.657] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:40:04.434] [INFO] mainlog - /GET
+[2017-12-08 20:40:09.847] [INFO] mainlog - /GET
+[2017-12-08 20:40:09.849] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:40:10.568] [INFO] mainlog - /GET
+[2017-12-08 20:40:20.850] [INFO] mainlog - /GET
+[2017-12-08 20:40:20.855] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:40:31.849] [INFO] mainlog - /GET
+[2017-12-08 20:40:31.852] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:40:42.846] [INFO] mainlog - /GET
+[2017-12-08 20:40:42.847] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:40:53.163] [INFO] mainlog - /GET
+[2017-12-08 20:40:53.165] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:41:03.849] [INFO] mainlog - /GET
+[2017-12-08 20:41:03.852] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:41:14.848] [INFO] mainlog - /GET
+[2017-12-08 20:41:14.852] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:41:25.851] [INFO] mainlog - /GET
+[2017-12-08 20:41:25.853] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:41:36.854] [INFO] mainlog - /GET
+[2017-12-08 20:41:36.857] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:41:47.851] [INFO] mainlog - /GET
+[2017-12-08 20:41:47.853] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:41:58.849] [INFO] mainlog - /GET
+[2017-12-08 20:41:58.851] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:42:09.852] [INFO] mainlog - /GET
+[2017-12-08 20:42:09.854] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:42:20.847] [INFO] mainlog - /GET
+[2017-12-08 20:42:20.848] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:42:31.849] [INFO] mainlog - /GET
+[2017-12-08 20:42:31.851] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:42:42.849] [INFO] mainlog - /GET
+[2017-12-08 20:42:42.851] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:42:53.850] [INFO] mainlog - /GET
+[2017-12-08 20:42:53.851] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:43:04.850] [INFO] mainlog - /GET
+[2017-12-08 20:43:04.851] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:43:15.850] [INFO] mainlog - /GET
+[2017-12-08 20:43:15.851] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:43:26.849] [INFO] mainlog - /GET
+[2017-12-08 20:43:26.850] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:43:37.847] [INFO] mainlog - /GET
+[2017-12-08 20:43:37.849] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:43:48.848] [INFO] mainlog - /GET
+[2017-12-08 20:43:48.850] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:43:59.848] [INFO] mainlog - /GET
+[2017-12-08 20:43:59.850] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:44:10.844] [INFO] mainlog - /GET
+[2017-12-08 20:44:10.845] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:44:21.843] [INFO] mainlog - /GET
+[2017-12-08 20:44:21.845] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:44:32.850] [INFO] mainlog - /GET
+[2017-12-08 20:44:32.852] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:44:43.845] [INFO] mainlog - /GET
+[2017-12-08 20:44:43.845] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:44:54.848] [INFO] mainlog - /GET
+[2017-12-08 20:44:54.850] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:45:05.849] [INFO] mainlog - /GET
+[2017-12-08 20:45:05.850] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:45:16.849] [INFO] mainlog - /GET
+[2017-12-08 20:45:16.852] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:45:27.848] [INFO] mainlog - /GET
+[2017-12-08 20:45:27.850] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:45:38.852] [INFO] mainlog - /GET
+[2017-12-08 20:45:38.855] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:45:49.851] [INFO] mainlog - /GET
+[2017-12-08 20:45:49.853] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:46:00.849] [INFO] mainlog - /GET
+[2017-12-08 20:46:00.850] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:46:11.848] [INFO] mainlog - /GET
+[2017-12-08 20:46:11.850] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:46:22.848] [INFO] mainlog - /GET
+[2017-12-08 20:46:22.850] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:46:33.849] [INFO] mainlog - /GET
+[2017-12-08 20:46:33.851] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:46:44.848] [INFO] mainlog - /GET
+[2017-12-08 20:46:44.850] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:46:55.844] [INFO] mainlog - /GET
+[2017-12-08 20:46:55.845] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:47:06.850] [INFO] mainlog - /GET
+[2017-12-08 20:47:06.852] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:47:17.845] [INFO] mainlog - /GET
+[2017-12-08 20:47:17.845] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:47:28.848] [INFO] mainlog - /GET
+[2017-12-08 20:47:28.849] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:47:39.848] [INFO] mainlog - /GET
+[2017-12-08 20:47:39.849] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:47:50.849] [INFO] mainlog - /GET
+[2017-12-08 20:47:50.850] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:48:01.851] [INFO] mainlog - /GET
+[2017-12-08 20:48:01.854] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:48:12.850] [INFO] mainlog - /GET
+[2017-12-08 20:48:12.852] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:48:23.851] [INFO] mainlog - /GET
+[2017-12-08 20:48:23.853] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:48:34.849] [INFO] mainlog - /GET
+[2017-12-08 20:48:34.851] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:48:45.849] [INFO] mainlog - /GET
+[2017-12-08 20:48:45.850] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:48:56.850] [INFO] mainlog - /GET
+[2017-12-08 20:48:56.852] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:49:07.851] [INFO] mainlog - /GET
+[2017-12-08 20:49:07.855] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:49:18.846] [INFO] mainlog - /GET
+[2017-12-08 20:49:18.846] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:49:29.851] [INFO] mainlog - /GET
+[2017-12-08 20:49:29.853] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:49:40.847] [INFO] mainlog - /GET
+[2017-12-08 20:49:40.849] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:49:51.849] [INFO] mainlog - /GET
+[2017-12-08 20:49:51.852] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:50:02.848] [INFO] mainlog - /GET
+[2017-12-08 20:50:02.850] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:50:13.848] [INFO] mainlog - /GET
+[2017-12-08 20:50:13.850] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:50:24.848] [INFO] mainlog - /GET
+[2017-12-08 20:50:24.849] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:50:35.849] [INFO] mainlog - /GET
+[2017-12-08 20:50:35.850] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:50:46.848] [INFO] mainlog - /GET
+[2017-12-08 20:50:46.850] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:50:57.850] [INFO] mainlog - /GET
+[2017-12-08 20:50:57.851] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:51:08.849] [INFO] mainlog - /GET
+[2017-12-08 20:51:08.851] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:51:19.849] [INFO] mainlog - /GET
+[2017-12-08 20:51:19.851] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:51:30.850] [INFO] mainlog - /GET
+[2017-12-08 20:51:30.852] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:51:41.849] [INFO] mainlog - /GET
+[2017-12-08 20:51:41.851] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:51:52.849] [INFO] mainlog - /GET
+[2017-12-08 20:51:52.851] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:52:03.848] [INFO] mainlog - /GET
+[2017-12-08 20:52:03.850] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:52:14.851] [INFO] mainlog - /GET
+[2017-12-08 20:52:14.852] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:52:25.850] [INFO] mainlog - /GET
+[2017-12-08 20:52:25.852] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:52:36.847] [INFO] mainlog - /GET
+[2017-12-08 20:52:36.850] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:52:47.850] [INFO] mainlog - /GET
+[2017-12-08 20:52:47.852] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:52:58.848] [INFO] mainlog - /GET
+[2017-12-08 20:52:58.850] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:53:09.853] [INFO] mainlog - /GET
+[2017-12-08 20:53:09.855] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:53:20.848] [INFO] mainlog - /GET
+[2017-12-08 20:53:20.850] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:53:31.848] [INFO] mainlog - /GET
+[2017-12-08 20:53:31.850] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:53:42.851] [INFO] mainlog - /GET
+[2017-12-08 20:53:42.853] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:53:53.848] [INFO] mainlog - /GET
+[2017-12-08 20:53:53.850] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:54:04.847] [INFO] mainlog - /GET
+[2017-12-08 20:54:04.849] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:54:15.849] [INFO] mainlog - /GET
+[2017-12-08 20:54:15.850] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:54:26.849] [INFO] mainlog - /GET
+[2017-12-08 20:54:26.851] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:54:37.849] [INFO] mainlog - /GET
+[2017-12-08 20:54:37.851] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:54:48.848] [INFO] mainlog - /GET
+[2017-12-08 20:54:48.849] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:54:59.850] [INFO] mainlog - /GET
+[2017-12-08 20:54:59.851] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:55:10.858] [INFO] mainlog - /GET
+[2017-12-08 20:55:10.860] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:55:21.851] [INFO] mainlog - /GET
+[2017-12-08 20:55:21.853] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:55:32.846] [INFO] mainlog - /GET
+[2017-12-08 20:55:32.846] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:55:43.844] [INFO] mainlog - /GET
+[2017-12-08 20:55:43.845] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:55:54.850] [INFO] mainlog - /GET
+[2017-12-08 20:55:54.856] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:56:05.851] [INFO] mainlog - /GET
+[2017-12-08 20:56:05.852] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:56:16.850] [INFO] mainlog - /GET
+[2017-12-08 20:56:16.852] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:56:23.417] [DEBUG] mainlog - Logging established.
+[2017-12-08 20:56:23.423] [ERROR] mainlog - USING FAKE VALVES
+[2017-12-08 20:56:23.436] [INFO] mainlog - Watering app listening on port 8080!
+[2017-12-08 20:56:23.436] [INFO] mainlog - Closing Valves to ensure we are not loosing water !!
+[2017-12-08 20:56:23.437] [DEBUG] mainlog - valve1Close() 
+[2017-12-08 20:56:23.437] [DEBUG] mainlog - valve1Open()  state :CLOSED
+[2017-12-08 20:56:23.438] [DEBUG] mainlog - valve2Close() 
+[2017-12-08 20:56:23.438] [DEBUG] mainlog - valve2Open()  state :CLOSED
+[2017-12-08 20:56:27.873] [INFO] mainlog - /GET
+[2017-12-08 20:56:27.875] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:56:38.852] [INFO] mainlog - /GET
+[2017-12-08 20:56:38.854] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:56:49.850] [INFO] mainlog - /GET
+[2017-12-08 20:56:49.853] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:57:00.849] [INFO] mainlog - /GET
+[2017-12-08 20:57:00.851] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:57:11.859] [INFO] mainlog - /GET
+[2017-12-08 20:57:11.862] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:57:22.849] [INFO] mainlog - /GET
+[2017-12-08 20:57:22.851] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:57:33.849] [INFO] mainlog - /GET
+[2017-12-08 20:57:33.852] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:57:44.849] [INFO] mainlog - /GET
+[2017-12-08 20:57:44.851] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:57:55.852] [INFO] mainlog - /GET
+[2017-12-08 20:57:55.854] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:58:06.849] [INFO] mainlog - /GET
+[2017-12-08 20:58:06.852] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:58:17.848] [INFO] mainlog - /GET
+[2017-12-08 20:58:17.850] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:58:28.848] [INFO] mainlog - /GET
+[2017-12-08 20:58:28.850] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:58:39.848] [INFO] mainlog - /GET
+[2017-12-08 20:58:39.850] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:58:50.849] [INFO] mainlog - /GET
+[2017-12-08 20:58:50.851] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:59:01.849] [INFO] mainlog - /GET
+[2017-12-08 20:59:01.851] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:59:12.851] [INFO] mainlog - /GET
+[2017-12-08 20:59:12.853] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:59:23.851] [INFO] mainlog - /GET
+[2017-12-08 20:59:23.853] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:59:34.845] [INFO] mainlog - /GET
+[2017-12-08 20:59:34.846] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 20:59:44.878] [INFO] mainlog - /GET
+[2017-12-08 20:59:44.879] [DEBUG] mainlog - getvalvestatus called
+[2017-12-08 21:04:18.425] [DEBUG] mainlog - Logging established.
+[2017-12-08 21:04:18.435] [ERROR] mainlog - USING FAKE VALVES
+[2017-12-08 21:04:18.452] [INFO] mainlog - Watering app listening on port 8080!
+[2017-12-08 21:04:18.453] [INFO] mainlog - Closing Valves to ensure we are not loosing water !!
+[2017-12-08 21:04:18.453] [DEBUG] mainlog - valve1Close() 
+[2017-12-08 21:04:18.454] [DEBUG] mainlog - valve1Open()  state :CLOSED
+[2017-12-08 21:04:18.456] [DEBUG] mainlog - valve2Close() 
+[2017-12-08 21:04:18.457] [DEBUG] mainlog - valve2Open()  state :CLOSED
+[2017-12-08 21:05:21.426] [DEBUG] mainlog - Logging established.
+[2017-12-08 21:05:21.434] [ERROR] mainlog - USING FAKE VALVES
+[2017-12-08 21:05:21.452] [INFO] mainlog - Watering app listening on port 8080!
+[2017-12-08 21:05:21.453] [INFO] mainlog - Closing Valves to ensure we are not loosing water !!
+[2017-12-08 21:05:21.453] [DEBUG] mainlog - valve1Close() 
+[2017-12-08 21:05:21.454] [DEBUG] mainlog - valve1Open()  state :CLOSED
+[2017-12-08 21:05:21.455] [DEBUG] mainlog - valve2Close() 
+[2017-12-08 21:05:21.455] [DEBUG] mainlog - valve2Open()  state :CLOSED
+[2017-12-08 21:05:33.090] [INFO] mainlog - /GET
+[2017-12-08 21:05:33.657] [INFO] mainlog - /GET
+[2017-12-08 21:05:39.956] [INFO] mainlog - /GET
+[2017-12-08 21:05:40.529] [INFO] mainlog - /GET
+[2017-12-08 21:05:41.075] [INFO] mainlog - /GET
+[2017-12-08 21:05:41.606] [INFO] mainlog - /GET
+[2017-12-08 21:06:02.438] [DEBUG] mainlog - Logging established.
+[2017-12-08 21:06:02.446] [ERROR] mainlog - USING FAKE VALVES
+[2017-12-08 21:06:02.464] [INFO] mainlog - Watering app listening on port 8080!
+[2017-12-08 21:06:02.465] [INFO] mainlog - Closing Valves to ensure we are not loosing water !!
+[2017-12-08 21:06:02.465] [DEBUG] mainlog - valve1Close() 
+[2017-12-08 21:06:02.465] [DEBUG] mainlog - valve1Open()  state :CLOSED
+[2017-12-08 21:06:02.466] [DEBUG] mainlog - valve2Close() 
+[2017-12-08 21:06:02.467] [DEBUG] mainlog - valve2Open()  state :CLOSED
+[2017-12-08 21:06:04.979] [INFO] mainlog - /GET

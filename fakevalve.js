@@ -1,6 +1,7 @@
 
 var logger = require('./logger.js');
 var fixedQueue = require('./fixedqueue.js');
+var dateFormat = require('dateformat');
 var history = new fixedQueue(100);
   
 var valve1State = null;
