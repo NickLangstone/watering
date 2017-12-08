@@ -302,3 +302,9 @@
 [2016-11-20 04:16:40.361] [INFO] mainlog - /GET
 [2016-11-20 04:16:40.368] [DEBUG] mainlog - open2 called
 [2016-11-20 04:16:40.709] [INFO] mainlog - /GET
+[2017-12-06 19:24:31.319] [DEBUG] mainlog - Logging established.
+[2017-12-06 19:24:31.319] [DEBUG] mainlog - Data : {"time":"2017-12-06T06:24:31.319Z","action":"Valve 1 Closed"}
+[2017-12-06 19:27:41.952] [DEBUG] mainlog - Logging established.
+[2017-12-06 19:27:41.952] [DEBUG] mainlog - Data : {"time":"2017-12-06T06:27:41.952Z","formattedDate":"Wed Dec 06 2017 19:27:41","action":"Valve 1 Closed"}
+[2017-12-06 21:32:37.738] [DEBUG] mainlog - Logging established.
+[2017-12-06 21:32:37.738] [DEBUG] mainlog - Data : {"time":"2017-12-06T08:32:37.738Z","formattedDate":"Wed Dec 06 2017 21:32:37","action":"Valve 1 Closed"}

@@ -4,6 +4,11 @@ https://github.com/creationix/nvm    bas script to determine the correct node an
 		export NVM_DIR="$HOME/.nvm"
 		[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
 
+if python is not installed
+npm install --global --production windows-build-tools
+npm install --global node-gyp
+
+
 npm install -g nodemon
 run the app with 
 

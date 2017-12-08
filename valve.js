@@ -1,6 +1,7 @@
 var logger = require('./logger.js');
-
+var dateFormat = require('dateformat');
 var fixedQueue = require('./fixedqueue.js');
+var sleep = require('sleep');
 var history = new fixedQueue(100);
 
 var Gpio = require('onoff').Gpio,
@@ -19,8 +20,9 @@ var ON = 1;
 
 valve1.watch(function(err, value) {
      logger.debug("Valve1, detected : " + value + "  err : " + err  + "  Desitred state : " + valve1DesiredState );
-     
-     if ( valve1DesiredState == "OPEN" && value == 1 ){
+     sleep.msleep(50);  // Sleep fo 50ms to allow for microswitches to debounce and valve to complete its rotation
+
+    if ( valve1DesiredState == "OPEN" && value == 1 ){
          valve1State = "OPEN";
          valve1Motor.writeSync(OFF);
      }
@@ -33,7 +35,8 @@ valve1.watch(function(err, value) {
 
 valve2.watch(function(err, value) {
      logger.debug("Valve2, detected : " + value + "  err : " + err  + "  Desitred state : " + valve2DesiredState );
-     
+     sleep.msleep(50);  // Sleep fo 50ms to allow for microswitches to debounce and valve to complete its rotation
+
      if ( valve2DesiredState == "OPEN" && value == 1 ){
          valve2State = "OPEN";
          valve2Motor.writeSync(OFF);
@@ -70,7 +73,7 @@ var openValve1 = function valve1Open(){
    {
     valve1Turn();
     }
-	history.push( { time: new Date(), action: "Valve 1 Opened"});
+	history.push( { time: dateFormat(), action: "Valve 1 Opened"});
 }
 
 
@@ -87,7 +90,7 @@ var closeValve1 = function valve1Close(){
    {
     valve1Turn();
     }
-	history.push( { time: new Date(), action: "Valve 1 Closed"});
+	history.push( { time: dateFormat(), action: "Valve 1 Closed"});
 }
 
 
@@ -106,7 +109,7 @@ var openValve2 = function valve2Open(){
    {
     valve2Turn();
     }
-	history.push( { time: new Date(), action: "Valve 2 Opened"});
+	history.push( { time: dateFormat(), action: "Valve 2 Opened"});
 }
 
 var closeValve2 = function valve2Close(){
@@ -122,7 +125,7 @@ var closeValve2 = function valve2Close(){
    {
     valve2Turn();
     }
-	history.push( { time: new Date(), action: "Valve 2 Closed"});
+	history.push( { time: dateFormat(), action: "Valve 2 Closed"});
 
 }
 
