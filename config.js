@@ -1,5 +1,5 @@
 
 var config = {};
-config.fakevalves = true;
+config.fakevalves = false;
 
 module.exports = config;
