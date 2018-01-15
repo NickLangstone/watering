@@ -1,6 +1,7 @@
 var express = require('express')
 var app = express()
 var logger = require('./logger.js');
+var sleep = require('sleep');
 
 // use a fake valve if not running on a RaspberryPi
 var config = require('./config.js');
@@ -100,6 +101,10 @@ app.listen(8080, function () {
   logger.info('Watering app listening on port 8080!');
   
   logger.info('Closing Valves to ensure we are not loosing water !!');
+  valve.openValve1();
+  valve.openValve2();
+  
+  sleep.msleep(1000);  // 1 sec wait to help sync the tap valves 
 
   valve.closeValve1();
   valve.closeValve2();
