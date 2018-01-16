@@ -35,22 +35,23 @@ router.get("/contact",function(req,res){
   res.sendFile(path + "contact.html");
 });
 
-router.get("/close1",function(req,res){
-  logger.debug("close1 called");
-  valve.closeValve1();
-  res.sendFile(path + "index.html");
-});
-
-router.get("/open1",function(req,res){
-    logger.debug("open1 called");
-    valve.openValve1();
-    res.sendFile(path + "index.html");
-});
 
 function close1(){
  logger.debug("open1for5min 5 min timeout function called -- closing valve");
 valve.closeValve1();
 }
+
+function close2(){
+    logger.debug("open2for5min 5 min timeout function called -- closing valve");
+    valve.closeValve2()
+}
+
+function close3(){
+    logger.debug("open3for5min 5 min timeout function called -- closing valve");
+    valve.closeValve3()
+}
+
+
 router.get("/valve/:valve/time/:time",function(req,res){
     logger.debug("open  valve " + req.params.valve + " called for time:" + req.params.time);
 	if ( req.params.valve == 1 ) {
@@ -61,8 +62,26 @@ router.get("/valve/:valve/time/:time",function(req,res){
 		valve.openValve2();
 		setTimeout( close2 , req.params.time *1000 );
 	}
+    if ( req.params.valve == 3 ) {
+        valve.openValve3();
+        setTimeout( close3 , req.params.time *1000 );
+    }
     res.sendFile(path + "index.html");
 });
+// --------------------------
+
+router.get("/close1",function(req,res){
+    logger.debug("close1 called");
+    valve.closeValve1();
+    res.sendFile(path + "index.html");
+});
+
+router.get("/open1",function(req,res){
+    logger.debug("open1 called");
+    valve.openValve1();
+    res.sendFile(path + "index.html");
+});
+// --------------------------
 
 router.get("/close2",function(req,res){
   logger.debug("close2 called");
@@ -76,6 +95,21 @@ router.get("/open2",function(req,res){
     res.sendFile(path + "index.html");
 });
 
+// --------------------------
+
+router.get("/close3",function(req,res){
+    logger.debug("close3 called");
+    valve.closeValve3();
+    res.sendFile(path + "index.html");
+});
+
+router.get("/open3",function(req,res){
+    logger.debug("open3 called");
+    valve.openValve3();
+    res.sendFile(path + "index.html");
+});
+
+// --------------  ------------
 router.get("/getvalvestatus",function(req,res){
     logger.debug("getvalvestatus called");
 	
@@ -85,10 +119,6 @@ router.get("/getvalvestatus",function(req,res){
     res.json(valve.getStatus());
 });
 
-function close2(){
- logger.debug("open2for5min 5 min timeout function called -- closing valve");
-valve.closeValve2()
-}
 
 
 app.use("/",router);
@@ -108,6 +138,7 @@ app.listen(8080, function () {
 
   valve.closeValve1();
   valve.closeValve2();
+  valve.closeValve3();
 });
 
 
