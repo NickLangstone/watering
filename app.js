@@ -37,17 +37,17 @@ router.get("/contact",function(req,res){
 
 
 function close1(){
- logger.debug("open1for5min 5 min timeout function called -- closing valve");
-valve.closeValve1();
+    logger.debug("close1 function called -- closing valve");
+    valve.closeValve1();
 }
 
 function close2(){
-    logger.debug("open2for5min 5 min timeout function called -- closing valve");
+    logger.debug("close2 function called -- closing valve");
     valve.closeValve2()
 }
 
 function close3(){
-    logger.debug("open3for5min 5 min timeout function called -- closing valve");
+    logger.debug("close3 function called -- closing valve");
     valve.closeValve3()
 }
 
@@ -131,14 +131,21 @@ app.listen(8080, function () {
   logger.info('Watering app listening on port 8080!');
   
   logger.info('Closing Valves to ensure we are not loosing water !!');
+    sleep.msleep(2000);  // 1 sec wait to help sync the tap valves
   valve.openValve1();
+    sleep.msleep(1000);  // 1 sec wait to help sync the tap valves
   valve.openValve2();
-  
-  sleep.msleep(1000);  // 1 sec wait to help sync the tap valves 
+    sleep.msleep(1000);  // 1 sec wait to help sync the tap valves
+  valve.openValve3();
+
+    sleep.msleep(2000);  // 1 sec wait to help sync the tap valves
 
   valve.closeValve1();
+    sleep.msleep(1000);  // 1 sec wait to help sync the tap valves
   valve.closeValve2();
+    sleep.msleep(1000);  // 1 sec wait to help sync the tap valves
   valve.closeValve3();
+    sleep.msleep(1000);  // 1 sec wait to help sync the tap valves
 });
 
 

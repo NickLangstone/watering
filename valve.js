@@ -98,6 +98,7 @@ var openValve1 = function valve1Open(){
     }
 	history.push( { time: dateFormat(), action: "Valve 1 Opened"});
 };
+
 var closeValve1 = function valve1Close(){
   logger.debug("valve1Close() ");
    valve1DesiredState = "CLOSED";
